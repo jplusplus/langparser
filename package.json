@@ -1,0 +1,19 @@
+{
+  "name": "langparser",
+  "version": "1.0.0",
+  "description": "Restify middleware for parsing language/locale url parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jplusplus/langparser.git"
+  },
+  "author": "Leo Wallentin, J++ Stockholm <stockholm@jplusplus.org> (http://jplusplus.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jplusplus/langparser/issues"
+  },
+  "homepage": "https://github.com/jplusplus/langparser#readme"
+}
