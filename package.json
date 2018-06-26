@@ -2,7 +2,7 @@
   "name": "langparser",
   "version": "1.0.0",
   "description": "Restify middleware for parsing language/locale url parameters",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha"
   },
