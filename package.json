@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jplusplus/langparser#readme",
   "dependencies": {
     "bcp-47": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1"
   }
 }
