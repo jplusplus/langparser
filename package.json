@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jplusplus/langparser/issues"
   },
-  "homepage": "https://github.com/jplusplus/langparser#readme"
+  "homepage": "https://github.com/jplusplus/langparser#readme",
+  "dependencies": {
+    "bcp-47": "^1.0.4"
+  }
 }
