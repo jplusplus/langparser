@@ -1,2 +1,45 @@
-# langparser
-Restify middleware for parsing language/locale url parameters
+# Langparser
+A restify middleware for parsing language/locale url parameters.
+
+This middleware looks for a language tag in the query string (by deafult in `lang=XX` or `language=XX`), and tries to parse out locale and language, according to BCP 47.
+Parsed values will be available for any following routes in `res.locals.lang` and `res.locals.locale`
+respectively.
+
+# Installation
+
+```sh
+npm install langparser
+```
+
+# Usage
+
+```js
+const langParser = require("langParser")
+
+server.use(langParser())
+
+server.get("/my/route", (req, res, next) => {
+  console.log(res.locals.lang)
+  // Visiting /my/route?lang=sv-AX will print `sv`
+  // Visiting /my/route?lang=i-klingon will print `tlh`
+  console.log(res.locals.locale)
+  // Visiting /my/route?lang=sv-AX will print `sv-AX`
+  // Visiting /my/route?lang=i-klingon will print `tlh`
+}
+
+The following options are available:
+
+```js
+server.use(langParser({
+  defaultLang: "en-GB",  // Fallback language/locale if none found
+  params: ["sprache", "lingua"]  // URL param(s) to look for
+}))
+```
+
+By default we will look for the url parameters `lang` and `language`.
+
+# Changelog
+
++ 1.0.0
+
+  - First version
