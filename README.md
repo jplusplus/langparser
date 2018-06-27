@@ -38,10 +38,12 @@ server.use(langParser({
 
 By default we will look for the url parameters `lang` and `language`.
 
-If you want this middleware to work with post requests, you need to call the bodyParser middleware before this one:
+If you want this middleware to work with post requests, you need to call the bodyParser middleware before this one.
+
+For Restify 5.0 and newer:
 
 ```js
-server.use(restify.bodyParser())
+server.use(restify.plugins.bodyParser())
 server.use(langParser())
 ```
 
