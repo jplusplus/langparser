@@ -14,7 +14,7 @@ npm install langparser
 # Usage
 
 ```js
-const langParser = require("langParser")
+const langParser = require("langparser")
 
 server.use(langParser())
 
