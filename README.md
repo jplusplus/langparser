@@ -26,6 +26,7 @@ server.get("/my/route", (req, res, next) => {
   // Visiting /my/route?lang=sv-AX will print `sv-AX`
   // Visiting /my/route?lang=i-klingon will print `tlh`
 }
+```
 
 The following options are available:
 
