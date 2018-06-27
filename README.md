@@ -38,7 +38,18 @@ server.use(langParser({
 
 By default we will look for the url parameters `lang` and `language`.
 
+If you want this middleware to work with post requests, you need to call the bodyParser middleware before this one:
+
+```js
+server.use(restify.bodyParser())
+server.use(langParser())
+```
+
 # Changelog
+
++ 1.0.1
+
+  - Documentation fixes
 
 + 1.0.0
 
