@@ -21,7 +21,7 @@ function langParser(options={}) {
     }
   }
 
-  function middleware(req, res, next) {
+  let middleware = function(req, res, next) {
     if (!res.locals){
       res.locals = {}
     }
