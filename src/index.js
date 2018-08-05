@@ -7,7 +7,7 @@ const bcp47 = require("bcp-47")
  *
  * @function languageParser
  * @param {Object} [options] - an options object
- * @param {String} [options.defaultLang] - a fallback value, e.g. `eb-GB`
+ * @param {String} [options.defaultLang] - a fallback value, e.g. `en-GB`
  * @param {String|Array} [options.params] - the url parameter to look in
  */
 function langParser(options={}) {
