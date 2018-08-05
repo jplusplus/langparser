@@ -5,7 +5,7 @@ const bcp47 = require("bcp-47")
  * Use this as a middleware. Parsed values will be in `res.locals.lang` and
  * `res.locals.locale`
  *
- * @function languageParser
+ * @function langParser
  * @param {Object} [options] - an options object
  * @param {String} [options.defaultLang] - a fallback value, e.g. `en-GB`
  * @param {String|Array} [options.params] - the url parameter to look in
