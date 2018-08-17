@@ -1,4 +1,6 @@
 # Langparser
+[![npm package](https://nodei.co/npm/langparser.png](https://nodei.co/npm/langparser/)
+
 A restify middleware for parsing language/locale url parameters.
 
 This middleware looks for a language tag in the query string (by deafult in `lang=XX` or `language=XX`), and tries to parse out locale and language, according to BCP 47.
