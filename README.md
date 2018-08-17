@@ -1,5 +1,5 @@
 # Langparser
-[![npm package](https://nodei.co/npm/langparser.png](https://nodei.co/npm/langparser/)
+[![npm package](https://nodei.co/npm/langparser.png)](https://nodei.co/npm/langparser/)
 
 A restify middleware for parsing language/locale url parameters.
 
