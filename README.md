@@ -9,7 +9,7 @@ respectively.
 
 # Installation
 
-```sh
+``` sh
 npm install langparser
 ```
 
@@ -22,12 +22,12 @@ server.use(langParser())
 
 server.get("/my/route", (req, res, next) => {
   console.log(res.locals.lang)
-  // Visiting /my/route?lang=sv-AX will print `sv`
-  // Visiting /my/route?lang=i-klingon will print `tlh`
+  // Visiting /my/route?lang=sv-AX will print 'sv'
+  // Visiting /my/route?lang=i-klingon will print 'tlh'
   console.log(res.locals.locale)
-  // Visiting /my/route?lang=sv-AX will print `sv-AX`
-  // Visiting /my/route?lang=i-klingon will print `tlh`
-}
+  // Visiting /my/route?lang=sv-AX will print 'sv-AX'
+  // Visiting /my/route?lang=i-klingon will print 'tlh'
+})
 ```
 
 The following options are available:
@@ -51,6 +51,10 @@ server.use(langParser())
 ```
 
 # Changelog
+
++ next
+
+  - 
 
 + 1.0.1
 
