@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "eslint": "^5.15.3",
-    "mocha": "^6.1.2"
+    "mocha": "^6.2.0"
   },
   "peerDependencies": {
     "restify": "2.x.x - 8.x.x"
