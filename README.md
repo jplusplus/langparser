@@ -52,6 +52,10 @@ server.use(langParser())
 
 # Changelog
 
++ 1.1.1
+
+  - Dependency upgrades
+
 + 1.1.0
 
   - Add Restify 8 to peerDependencies, and require NodeJS >= 8
