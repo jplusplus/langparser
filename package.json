@@ -20,7 +20,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "bcp-47": "^1.0.7"
+    "bcp-47": "^1.0.8"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
