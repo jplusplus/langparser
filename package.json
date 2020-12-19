@@ -23,7 +23,7 @@
     "bcp-47": "^1.0.8"
   },
   "devDependencies": {
-    "eslint": "^7.15.0",
+    "eslint": "^7.16.0",
     "mocha": "^8.2.1"
   },
   "peerDependencies": {
