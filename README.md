@@ -52,6 +52,11 @@ server.use(langParser())
 
 # Changelog
 
++ 2.0.1
+
+  - Specify engine requirement to NodeJS >= 12.20.0, as we are now ESM only
+  - rename .eslintrc.js > .eslintrc.cjs
+
 + 2.0.0
 
   - Convert to ESM
