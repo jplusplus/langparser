@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jplusplus/langparser#readme",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.20.0"
   },
   "dependencies": {
     "bcp-47": "^2.1.0"
