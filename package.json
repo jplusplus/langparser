@@ -4,7 +4,7 @@
   "description": "Restify middleware for parsing language/locale url parameters",
   "main": "src/index.js",
   "scripts": {
-    "test": "eslint . && ./node_modules/mocha/bin/mocha"
+    "test": "npx eslint . && npx mocha"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,8 @@
     "bcp-47": "^1.0.8"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "mocha": "^8.3.2"
+    "eslint": "^8.22.0",
+    "mocha": "^10.0.0"
   },
   "peerDependencies": {
     "restify": "2.x.x - 8.x.x"
