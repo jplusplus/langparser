@@ -3,7 +3,7 @@
 
 A restify middleware for parsing language/locale url parameters.
 
-This middleware looks for a language tag in the query string (by deafult in `lang=XX` or `language=XX`), and tries to parse out locale and language, according to BCP 47.
+This middleware looks for a language tag in the query string (by default in `lang=XX` or `language=XX`), and tries to parse out locale and language, according to BCP 47.
 Parsed values will be available for any following routes in `res.locals.lang` and `res.locals.locale`
 respectively.
 
