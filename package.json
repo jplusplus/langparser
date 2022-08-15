@@ -1,8 +1,9 @@
 {
   "name": "langparser",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Restify middleware for parsing language/locale url parameters",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "npx eslint . && npx mocha"
   },
@@ -20,7 +21,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "bcp-47": "^1.0.8"
+    "bcp-47": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^8.22.0",

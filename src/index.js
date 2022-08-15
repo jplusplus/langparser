@@ -1,4 +1,4 @@
-const bcp47 = require("bcp-47")
+import { parse, stringify } from "bcp-47"
 /**
  * Looks for eg `lang=XX` or `language=XX` in the query string, and tries to
  * parse out locale and language, according to BCP 47.
@@ -32,15 +32,15 @@ function langParser(options={}) {
     if (!langstring){
       return next()
     }
-    let localeSchema = bcp47.parse(
+    let localeSchema = parse(
       langstring,
       {forgiving: true}
     )
     res.locals.lang = localeSchema.language
-    res.locals.locale = bcp47.stringify(localeSchema)
+    res.locals.locale = stringify(localeSchema)
     return next()
   }
   return middleware
 }
 
-module.exports = langParser
+export default langParser

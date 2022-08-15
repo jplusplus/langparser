@@ -52,6 +52,10 @@ server.use(langParser())
 
 # Changelog
 
++ 2.0.0
+
+  - Convert to ESM
+
 + 1.1.1
 
   - Dependency upgrades
