@@ -1,6 +1,6 @@
 {
   "name": "langparser",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Restify middleware for parsing language/locale url parameters",
   "main": "src/index.js",
   "type": "module",
@@ -24,10 +24,7 @@
     "bcp-47": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.22.0",
-    "mocha": "^10.0.0"
-  },
-  "peerDependencies": {
-    "restify": "2.x.x - 8.x.x"
+    "eslint": "^8.27.0",
+    "mocha": "^10.1.0"
   }
 }

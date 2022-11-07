@@ -1,7 +1,7 @@
 # Langparser
 [![npm package](https://nodei.co/npm/langparser.png)](https://nodei.co/npm/langparser/)
 
-A restify middleware for parsing language/locale url parameters.
+A middleware for parsing language/locale url parameters in Express, Fastify or Restify (or derivatives).
 
 This middleware looks for a language tag in the query string (by default in `lang=XX` or `language=XX`), and tries to parse out locale and language, according to BCP 47.
 Parsed values will be available for any following routes in `res.locals.lang` and `res.locals.locale`
@@ -21,10 +21,10 @@ const langParser = require("langparser")
 server.use(langParser())
 
 server.get("/my/route", (req, res, next) => {
-  console.log(res.locals.lang)
+  console.log(req.locals.lang)
   // Visiting /my/route?lang=sv-AX will print 'sv'
   // Visiting /my/route?lang=i-klingon will print 'tlh'
-  console.log(res.locals.locale)
+  console.log(req.locals.locale)
   // Visiting /my/route?lang=sv-AX will print 'sv-AX'
   // Visiting /my/route?lang=i-klingon will print 'tlh'
 })
@@ -41,7 +41,9 @@ server.use(langParser({
 
 By default we will look for the url parameters `lang` and `language`.
 
-If you want this middleware to work with post requests, you need to call the bodyParser middleware before this one.
+## Restify
+
+If you want this middleware to work with post requests in Restify, you need to call the bodyParser middleware before this one.
 
 For Restify 5.0 and newer:
 
@@ -50,7 +52,23 @@ server.use(restify.plugins.bodyParser())
 server.use(langParser())
 ```
 
+## Fastify
+
+If you use Fastify, you need the `@fastify/Express` plugin:
+
+```js
+import express from "@fastify/express"
+await fastify.register(express)
+fastify.use(langParser())
+```
+In the Fastify routes, parsed paramerters will be available under `req.raw.locals`
+
 # Changelog
+
++ 3.0.0
+
+  - Parse locale data moved from `res` to `req`
+  - Document Express and Fastify usage
 
 + 2.0.1
 

@@ -22,8 +22,8 @@ function langParser(options={}) {
   }
 
   let middleware = function(req, res, next) {
-    if (!res.locals){
-      res.locals = {}
+    if (!req.locals){
+      req.locals = {}
     }
     let langstring = opts.defaultLang
     urlParameters.forEach(p => {
@@ -36,8 +36,8 @@ function langParser(options={}) {
       langstring,
       {forgiving: true}
     )
-    res.locals.lang = localeSchema.language
-    res.locals.locale = stringify(localeSchema)
+    req.locals.lang = localeSchema.language
+    req.locals.locale = stringify(localeSchema)
     return next()
   }
   return middleware
