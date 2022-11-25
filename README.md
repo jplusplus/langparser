@@ -65,6 +65,9 @@ In the Fastify routes, parsed paramerters will be available under `req.raw.local
 
 # Changelog
 
++ 3.1.0
+  - Look in both `req.query` and `req.params`, as `query` is used by e.g. Fastify.
+
 + 3.0.0
 
   - Parse locale data moved from `res` to `req`

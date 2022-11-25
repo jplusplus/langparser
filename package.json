@@ -1,6 +1,6 @@
 {
   "name": "langparser",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Restify middleware for parsing language/locale url parameters",
   "main": "src/index.js",
   "type": "module",

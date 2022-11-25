@@ -27,7 +27,8 @@ function langParser(options={}) {
     }
     let langstring = opts.defaultLang
     urlParameters.forEach(p => {
-      langstring = req.params[p] || langstring
+      // Fastify etc: query. Restify etc: params.
+      langstring = (req.query ? req.query[p] : req.params[p]) || langstring
     })
     if (!langstring){
       return next()
